@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "uutkukorkmaz/laravel-statuses",
+    "description": "A package that makes managing the model statuses easier",
     "keywords": [
-        ":vendor_name",
+        "uutkukorkmaz",
         "laravel",
-        ":package_slug"
+        "laravel-statuses"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/uutkukorkmaz/laravel-statuses",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "uutkukorkmaz",
+            "email": "uutkukorkmaz@gmail.com",
             "role": "Developer"
         }
     ],
@@ -30,18 +30,17 @@
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
-        "phpunit/phpunit": "^9.5",
-        "spatie/laravel-ray": "^1.26"
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Uutkukorkmaz\\LaravelStatuses\\": "src",
+            "Uutkukorkmaz\\LaravelStatuses\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Uutkukorkmaz\\LaravelStatuses\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,10 +60,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Uutkukorkmaz\\LaravelStatuses\\LaravelStatusesServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelStatuses": "Uutkukorkmaz\\LaravelStatuses\\Facades\\LaravelStatuses"
             }
         }
     },
