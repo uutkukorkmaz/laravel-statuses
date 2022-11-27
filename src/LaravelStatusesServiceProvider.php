@@ -17,7 +17,7 @@ class LaravelStatusesServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-statuses')
-            ->hasConfigFile()
+            ->hasConfigFile('statuses')
             ->hasCommand(StatusGenerateCommand::class);
     }
 }
