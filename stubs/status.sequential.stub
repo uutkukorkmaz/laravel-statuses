@@ -5,20 +5,12 @@ namespace {{ namespace }};
 enum {{ class }}: string
 {
 
-    # region Statuses
-
-    case PENDING = 'pending';
-    case PUBLISHED = 'published';
-
-    # endregion
-
-    # region Functionality
+    {{ cases }}
 
     public function next(): self
     {
         return match ($this) {
-            self::PENDING => self::PUBLISHED,
-            self::PUBLISHED => throw new \LogicException($this->value.' status is the final for this sequence. Cannot move forwards.'),
+            {{ sequence_forwards }}
             default => throw new \LogicException('Invalid status'),
         };
     }
@@ -26,13 +18,9 @@ enum {{ class }}: string
     public function previous(): self
     {
         return match($this) {
-            self::PENDING => throw new \LogicException($this->value.' status is the first for this sequence. Cannot move backwards.'),
-            self::PUBLISHED => self::PENDING,
+            {{ sequence_backwards }}
             default => throw new \LogicException('Invalid status'),
         };
     }
-
-    # endregion
-
 }
 

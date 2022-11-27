@@ -4,15 +4,6 @@ namespace {{ namespace }};
 
 enum {{ class }}: string
 {
-
-    # region Statuses
-
-    # endregion
-
-
-    # region Functionality
-
-    # endregion
-
+    {{ cases }}
 }
 
