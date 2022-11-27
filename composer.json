@@ -64,10 +64,10 @@
                 "Uutkukorkmaz\\LaravelStatuses\\LaravelStatusesServiceProvider"
             ],
             "aliases": {
-                "LaravelStatuses": "Uutkukorkmaz\\LaravelStatuses\\Facades\\LaravelStatuses"
+                "LaravelStatuses": "Uutkukorkmaz\\LaravelStatuses\\Facades\\Status"
             }
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": false
 }
