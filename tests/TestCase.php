@@ -2,7 +2,7 @@
 
 namespace Uutkukorkmaz\LaravelStatuses\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\File;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Uutkukorkmaz\LaravelStatuses\LaravelStatusesServiceProvider;
 
@@ -12,9 +12,10 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Uutkukorkmaz\\LaravelStatuses\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
+        $this->beforeApplicationDestroyed(function () {
+            File::cleanDirectory(app_path('Enums'));
+            File::cleanDirectory(app_path('Models'));
+        });
     }
 
     protected function getPackageProviders($app)
@@ -27,10 +28,5 @@ class TestCase extends Orchestra
     public function getEnvironmentSetUp($app)
     {
         config()->set('database.default', 'testing');
-
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_laravel-statuses_table.php.stub';
-        $migration->up();
-        */
     }
 }
