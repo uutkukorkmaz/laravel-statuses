@@ -20,7 +20,7 @@ composer require uutkukorkmaz/laravel-statuses
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-statuses-config"
+php artisan vendor:publish --tag="statuses-config"
 ```
 
 This is the contents of the published config file:
