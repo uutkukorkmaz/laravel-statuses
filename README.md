@@ -1,4 +1,4 @@
-![Laravel Statuses](https://github.com/uutkukorkmaz/laravel-statuses/tree/main/.github/package-banner.png)
+![Laravel Statuses](https://github.com/uutkukorkmaz/laravel-statuses/raw/main/.github/package-banner.png)
 # Laravel Statuses
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/uutkukorkmaz/laravel-statuses.svg?style=flat-square)](https://packagist.org/packages/uutkukorkmaz/laravel-statuses)
