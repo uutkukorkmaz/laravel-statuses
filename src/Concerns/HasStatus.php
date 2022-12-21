@@ -29,6 +29,7 @@ trait HasStatus
             $this->status = $this->status->next();
             $this->save();
         }
+        // todo: fire custom events
     }
 
     public function statusPrevious(): void
@@ -37,5 +38,7 @@ trait HasStatus
             $this->status = $this->status->previous();
             $this->save();
         }
+
+        // todo: fire custom events
     }
 }
