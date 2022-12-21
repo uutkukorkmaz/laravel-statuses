@@ -2,8 +2,8 @@
 # Laravel Statuses
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/uutkukorkmaz/laravel-statuses.svg?style=flat-square)](https://packagist.org/packages/uutkukorkmaz/laravel-statuses)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/uutkukorkmaz/laravel-statuses/run-tests?label=tests)](https://github.com/uutkukorkmaz/laravel-statuses/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/uutkukorkmaz/laravel-statuses/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/uutkukorkmaz/laravel-statuses/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/uutkukorkmaz/laravel-statuses/run-tests.yml?label=tests&branch=main)](https://github.com/uutkukorkmaz/laravel-statuses/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/uutkukorkmaz/laravel-statuses/fix-php-code-style-issues.yml?label=code%20style&branch=main)](https://github.com/uutkukorkmaz/laravel-statuses/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/uutkukorkmaz/laravel-statuses.svg?style=flat-square)](https://packagist.org/packages/uutkukorkmaz/laravel-statuses)
 
 Laravel Statuses is a package that makes managing the model statuses easier. It provides a trait that you can use in
